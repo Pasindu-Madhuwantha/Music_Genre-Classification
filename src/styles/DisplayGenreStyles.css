@@ -1,0 +1,32 @@
+.genre-bars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .genre-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .bar {
+    height: 20px;
+    background-color: #007bff; 
+  }
+  
+  .label {
+    margin-left: 8px;
+  }
+
+  .trending-tracks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-around;
+}
+
+.card {
+    width: 18rem;
+    margin-bottom: 1rem;
+}
