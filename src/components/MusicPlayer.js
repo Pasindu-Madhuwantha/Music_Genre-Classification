@@ -30,10 +30,11 @@ const MusicPlayer = () => {
     formData.append('audioFilePath', file_path);
 
     try {
-      const response = await fetch('http://localhost:5000/predict-genre', {
+      const response = await fetch('https://steady-redfish-entirely.ngrok-free.app/predict-genre', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
+          'ngrok-skip-browser-warning': '4567'
         },
         body: JSON.stringify({ audioFilePath: file_path })
       });
