@@ -9,7 +9,7 @@ jobs:
     displayName: 'Build and push an image to container registry'
     inputs:
       containerRegistry: 'docker777'
-      repository: 'pasindu1952/lofi_generator'
+      repository: 'pasindu1952/genre_classification'
       command: 'buildAndPush'
       Dockerfile: '**/Dockerfile'
       tags: '$(Build.BuildId)'
